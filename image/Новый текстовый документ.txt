@@ -1,0 +1,28 @@
+ <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Canvas Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" Background="#235D79"></Canvas>
+        <Image Source="D:\GIT\GameStore\image\logo.jpg" 
+                   VerticalAlignment="Center" HorizontalAlignment="Center"
+                        Margin="40 5 0 5">
+        </Image>
+        <TextBlock Text="MAMKIN-BOEZ.SHOP.RU" Foreground="White"
+         TextAlignment="Center" VerticalAlignment="Center" FontSize="32" FontStretch="Expanded"
+          Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3"></TextBlock>
+        <TextBox Grid.Row="0" Grid.Column="4"  FontSize="18" Height="32" DockPanel.Dock="left" ></TextBox>
+        <Button Grid.Row="0" Grid.Column="5" Height="32" Width="32" Margin="10"  HorizontalAlignment="Left">
+            <Image Source="D:\GIT\GameStore\image\findIcon.png"></Image>
+        </Button>
