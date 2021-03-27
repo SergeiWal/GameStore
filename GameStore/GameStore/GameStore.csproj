@@ -95,6 +95,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DataWork\GameDataService.cs" />
+    <Compile Include="GameCell.cs" />
     <Compile Include="Genre.cs" />
     <Compile Include="SystemRequirements.cs" />
     <Page Include="DictionaryMaterialDesign.xaml">
@@ -169,6 +170,7 @@
     <Resource Include="images\WarThunder.jpg" />
     <Resource Include="images\Wildfire.png" />
     <Resource Include="images\witherjpg.jpg" />
+    <Resource Include="images\eye.png" />
     <Content Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />

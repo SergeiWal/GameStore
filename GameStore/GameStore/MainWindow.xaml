@@ -322,9 +322,8 @@
                 </TextBlock>
             </Grid>
 
-            <ScrollViewer Grid.Row="1">
-                <StackPanel>
-                    
+            <ScrollViewer x:Name="DataSection" Grid.Row="1">
+                <StackPanel x:Name="DataSectionStack">
                 </StackPanel>
             </ScrollViewer>
 

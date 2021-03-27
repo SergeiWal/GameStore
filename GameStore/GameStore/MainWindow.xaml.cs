@@ -8,10 +8,12 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 
 namespace GameStore
 {
@@ -23,6 +25,18 @@ namespace GameStore
         public MainWindow()
         {
             InitializeComponent();
+            Game game = new Game();
+            game.FullName = "Assassin Creed 3";
+            game.Image = "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\AS3.jpg";
+            Grid gameCell = GameCell.BuildCell(game);
+            DataSectionStack.Children.Add(gameCell);
         }
+
+       // public void DisplayAllGames()
+       // {
+       //     
+       // }
+
+       
     }
 }
