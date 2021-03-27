@@ -1,0 +1,289 @@
+{
+  "FullName": "Assassin's Creed 3",
+  "SmallName": "ASIII",
+  "Developer": "Ubisoft",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\AS3.jpg",
+  "Genre": 0,
+  "Rating": 236,
+  "Price": 6,
+  "Description": "Our new hero is Connor, who grew up in the Mojave tribe. Having made a promise to protect his people and preserve their freedom and choose the right to a dignified life - he has a lot of work to do.",
+  "SystemRequirements": {
+    "OS": "Windows 7, 8, 10 (64-bit)",
+    "Processor": "Intel Core 2 Duo E8200",
+    "RAM": 2,
+    "FreeMemory": 8
+  }
+}
+{
+  "FullName": "Cyberpunk 2077",
+  "SmallName": "CP2077",
+  "Developer": "CD Projekt RED",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\cyberpank.jpg",
+  "Genre": 0,
+  "Rating": 2654,
+  "Price": 123,
+  "Description": "Cyberpunk will always be in demand from ordinary players. And best of all, now the creators of the legendary Witcher have turned their attention to this universe. They decided to take matters into their own hands and create a truly unique and large world to explore and enjoy the many possibilities. In this case, you can edit the appearance of the protagonist, do not limit your actions in the vastness of this game and do everything to find a special drug that can make its owner immortal. It will be difficult to do this, since the world in which you have to live is influenced by various gangs, and they definitely do not want such a curious character to go and look for treasure.",
+  "SystemRequirements": {
+    "OS": "Windows 7, 8, 10 (64-bit)",
+    "Processor": "Core i5-3570K / FX-8310",
+    "RAM": 8,
+    "FreeMemory": 8
+  }
+}
+{
+  "FullName": "Nioh 2",
+  "SmallName": "N2",
+  "Developer": "KOEI TECMO GAMES CO., LTD",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\Nioh2.jpg",
+  "Genre": 0,
+  "Rating": 72,
+  "Price": 54,
+  "Description": "We remind you that the first part of the game project made it possible to fight with dangerous enemies and go through the whole path of war in the person of one warrior. He had to deal with simple swordsmen, demons and even spirits. Along the way, he was gaining strength, fighting the masters and preparing for the final battle. And if you enjoyed the first part of the adventure and can't wait to start playing the sequel",
+  "SystemRequirements": {
+    "OS": "Windows 8.1 / 10 (64-bit)",
+    "Processor": " Intel Core i5 4460",
+    "RAM": 6,
+    "FreeMemory": 70
+  }
+}
+{
+  "FullName": "Dark Souls",
+  "SmallName": "DS",
+  "Developer": "FromSoftware",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\DS.jpg",
+  "Genre": 0,
+  "Rating": 12,
+  "Price": 23,
+  "Description": "This game features a lot of well-known features, such as: the world of dark fantasy, crawling through mysterious caves, and terrible battles with opponents. The user will plunge into a new mystical story with deadly traps, dark mobs, powerful demons and terrible dragon bosses. You have to learn from death in order to survive. But thanks to the spirits of the other players you see, you will be given the chance to learn the lessons you need from their deaths.",
+  "SystemRequirements": {
+    "OS": "Windows XP ",
+    "Processor": " Core 2 Duo E6850 3.0 GHz / Phenom II X2 545 3.0 GHz",
+    "RAM": 2,
+    "FreeMemory": 4
+  }
+}
+{
+  "FullName": "The Witcher 3 Wild Hunt",
+  "SmallName": "The Witcher 3",
+  "Developer": "CD Projekt RED ",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\witherjpg.jpg",
+  "Genre": 5,
+  "Rating": 1219,
+  "Price": 113,
+  "Description": "The game's plot covers three main lines: the invasion of the Nilfgaard army, the search for a certain female personality - the heroine of an ancient prophecy, the pursuit of the Witcher by the Wild Hunt. This is the most unimaginable nightmare, represented by ghostly riders who can instantly wipe out an entire village from the face of the earth. The hero will have to make well-thought-out plans in order to achieve his goals. However, suddenly changing weather conditions can easily disrupt them, then you will have to quickly come up with a new strategy.",
+  "SystemRequirements": {
+    "OS": "7, 8, 10 (64bit)",
+    "Processor": " Intel CPU Core i5-2500K",
+    "RAM": 6,
+    "FreeMemory": 45
+  }
+}
+{
+  "FullName": "Call of Duty 4 Modern Warfare",
+  "SmallName": "COD4",
+  "Developer": "Infinity Ward",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\COD4.jpg",
+  "Genre": 1,
+  "Rating": 289,
+  "Price": 23,
+  "Description": "Apparently, the plot of the Second World War has exhausted itself and this time the project was launched with a bias in the other direction - stories of the future, with other heroes, but with the same ongoing war. Terrorism became the main threat to all, and all residents decided to unite in the fight. Of course, your character plays the main role and the outcome of the events depends on his actions. Several heroes are offered to choose from, each has its own story and its own motivation, which makes it possible to look at the general situation from different angles.",
+  "SystemRequirements": {
+    "OS": "Windows XP, Vista, 7,8,10 (32-64-bit)",
+    "Processor": " Intel Pentium 4 2,4 GHz, AMD Athlon 64 2800+",
+    "RAM": 2,
+    "FreeMemory": 5
+  }
+}
+{
+  "FullName": "Metro Exodus ",
+  "SmallName": "Metro",
+  "Developer": "4A Games",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\Metro.jpg",
+  "Genre": 1,
+  "Rating": 1691,
+  "Price": 86,
+  "Description": "So, in Metro Exodus, the gamer in the role of Artyom will have to travel a lot on the surface. And the surface is majestic landscapes, albeit not as innocent as nature was many millennia ago, and not as industrial as Russia was before the nuclear war, which forced a few groups of survivors to descend into the subway in order to survive. Whatever they are, these endless expanses cannot fail to impress.",
+  "SystemRequirements": {
+    "OS": "Windows, 7, 8, 10 (64-bit only)",
+    "Processor": "Intel Core i5-4440 or AMD FX-6300 @ 3.5 GHz",
+    "RAM": 8,
+    "FreeMemory": 100
+  }
+}
+{
+  "FullName": "Fortnite Battle Royale",
+  "SmallName": "Fortnite",
+  "Developer": "Epic Games",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\Fortnite.jpg",
+  "Genre": 1,
+  "Rating": 2534,
+  "Price": 45,
+  "Description": "Let's mix strategy and action in one game, the developers decided ... And without any wars!",
+  "SystemRequirements": {
+    "OS": "Windows 7, 8, 8.1, 10",
+    "Processor": "Core i3 2,4 ÃÃö",
+    "RAM": 4,
+    "FreeMemory": 12
+  }
+}
+{
+  "FullName": "RIDE 4",
+  "SmallName": "RD",
+  "Developer": "Milestone S.r.l.",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\ride.png",
+  "Genre": 2,
+  "Rating": 8,
+  "Price": 54,
+  "Description": "According to the developers from the Italian studio Melistone, they were able to achieve a completely new level of development in the game and are now ready to please aesthetically minded players. When creating a new adventure, a unique technology was used to fully scan an object and place it in a virtual environment. Thanks to this approach, everyone will be able to enjoy realistic and detailed bikes. Graphics have really reached a new level and now you can spend hours in the garage, enjoying incredibly beautiful graphics. And so that you can personally evaluate this improvement, you just need to download RIDE 4 via torrent on a PC in Russian.",
+  "SystemRequirements": {
+    "OS": "Windows 8.1 / 10 (64-bit)",
+    "Processor": "Core i5-2500K / FX-6350",
+    "RAM": 8,
+    "FreeMemory": 43
+  }
+}
+{
+  "FullName": "Need for Speed Carbon",
+  "SmallName": "NFS Carbon",
+  "Developer": "EA Black Box",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\NFS.jpg",
+  "Genre": 2,
+  "Rating": 150,
+  "Price": 12,
+  "Description": "In the racing game Need for Speed Carbon, at first glance, everything is the same as in the previous games in the series - the roar of engines, breakneck speeds, incredible risks, the struggle for power and super cool cars. The adrenaline is just off scale! However, this is not the limit - the adrenaline bar will simply explode when the game reaches a turning point. So, everything starts as usual: just entering the ranks of street racers, the gamer tries to win city races, competing with the steering sharks.",
+  "SystemRequirements": {
+    "OS": "XP (32-Bit), Vista, 7, 8, 10",
+    "Processor": "1.7 GHz",
+    "RAM": 1,
+    "FreeMemory": 6
+  }
+}
+{
+  "FullName": "LIRE",
+  "SmallName": "LIRE",
+  "Developer": "ZheroIsland",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\LIRE.jpg",
+  "Genre": 3,
+  "Rating": 1,
+  "Price": 5,
+  "Description": "Ghosts can be everywhere, and they are nowhere near as calm as they might initially appear. This time you have to take on the role of a young and beautiful girl who got into a large mansion with ghosts who began to torment her. And it seems that the girl should be scared, but she decided to immediately take the chance not only to save her life, but also to find out the secrets of this mansion. Therefore, she goes on a long adventure and tries by any means to achieve a favorable result. True, the paranormal forces are not happy with such activity, and they intend to get rid of it, or even worse - to captivate her soul. Help the young girl avoid such a fate and break free.",
+  "SystemRequirements": {
+    "OS": " Windows 7 / 8 / 10 (64-bit)",
+    "Processor": "Intel Core i3",
+    "RAM": 4,
+    "FreeMemory": 8
+  }
+}
+{
+  "FullName": "Golden Light",
+  "SmallName": "GL",
+  "Developer": "Mr. Pink",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\gl.jpg",
+  "Genre": 3,
+  "Rating": 0,
+  "Price": 0,
+  "Description": "The beloved of the protagonist was carried away somewhere by creatures from the underworld. You find yourself in a unique and eerie place called Guts, making your way through its hideous tunnels and getting to know nasty and evil, and sometimes friendly and funny creatures. Some of them hinder the passage, while others, on the contrary, facilitate. And to facilitate the passage of the path, you will need all possible attributes: an old pipe, a fire hatchet, a dubious apple made of meat, or even a bat's head. You will have to find the keys to the elevator on each floor. So, as you progress, a meeting with the boss is approaching.",
+  "SystemRequirements": {
+    "OS": "Windows 7 / 8 / 10 (64-bit)",
+    "Processor": "Intel Core i-5-4000+",
+    "RAM": 4,
+    "FreeMemory": 2
+  }
+}
+{
+  "FullName": "Wildfire",
+  "SmallName": "Wildfire",
+  "Developer": "Sneaky Bastards",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\Wildfire.png",
+  "Genre": 4,
+  "Rating": 3,
+  "Price": 27,
+  "Description": "If you love various stealth-style adventures, then we suggest you not to waste time and start a completely new journey that will delight you with a variety of novelties and a new story. This time you have to take on the role of a hero who must defend his native lands from the invasion of invaders. True, given that he is alone, he will have to act covertly, especially considering that he does not have special physical skills, sometimes he will have to avoid a collision with the enemy. At the same time, he possesses the magic of the elements, starting with fire and ending with water, earth, etc. Using these elements, he will have to adjust situations, hide from enemies and strive for the set goal.",
+  "SystemRequirements": {
+    "OS": "Windows 7 / 8 / 10",
+    "Processor": " Intel Core i5-2300 / AMD FX-4350",
+    "RAM": 2,
+    "FreeMemory": 1
+  }
+}
+{
+  "FullName": "Dungreed",
+  "SmallName": "Dungreed",
+  "Developer": "TEAM HORAY",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\Dungreed.jpg",
+  "Genre": 4,
+  "Rating": 14,
+  "Price": 9,
+  "Description": "Dungreed is a roguelike adventure game that invites you to go on an exciting adventure and try to save the whole city. The story of this adventure tells how a strange anomaly appeared at the epicenter of the whole city, devouring people and sending them to the vastness of the underworld. At first, no one attached importance to this direction, but when the situation got out of control, the city needed a hero. Fortunately, such was nearby and now he will do everything to save people. The adventure promises to be quite difficult, so before you decide to download Dungreed torrent, it is better to mentally prepare.",
+  "SystemRequirements": {
+    "OS": "Windows 7",
+    "Processor": "Dual Core ",
+    "RAM": 1,
+    "FreeMemory": 1
+  }
+}
+{
+  "FullName": "The Elder Scrolls 5 Skyrim",
+  "SmallName": "Skyrim",
+  "Developer": "Bethesda Game Studios",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\Skyrim.jpg",
+  "Genre": 5,
+  "Rating": 901,
+  "Price": 34,
+  "Description": "On whom can the future of the empire depend? Who will determine the future of Tamriel? Who has in his veins the blood of a creature before whom everyone trembles? Who has the power of the Voice that grants the ability to resist the dragon? Of course, you are a player who has decided to take part in all this chaos and only you can deal with everything.",
+  "SystemRequirements": {
+    "OS": "Windows 7/ 8.1/ 10 (64bit)",
+    "Processor": "Intel i5-750/AMD Phenom II X4-945",
+    "RAM": 2,
+    "FreeMemory": 12
+  }
+}
+{
+  "FullName": "Mortal Kombat 11",
+  "SmallName": "MK11",
+  "Developer": "NetherRealm Studios, QLOC, Shiver",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\MK11.jpg",
+  "Genre": 6,
+  "Rating": 387,
+  "Price": 121,
+  "Description": "This game series has become the largest among all fighting games and continues to actively develop. The main trailer of the announcement has already been shown, which shows how Raiden and Scorpio fight. The trailer shows that the game has become even more gloomy and bloody, and most importantly, now all users are waiting for a new character who has not previously appeared in the vastness of the game universe. The developers promise more advanced customization that you could see in the game Injustice 2. Players will be able to compete with each other, earn different points and just feel comfortable.",
+  "SystemRequirements": {
+    "OS": "Windows 7 /8 / 10 (64-bit)",
+    "Processor": " Core i5-750 / Phenom II X4 965 / Ryzen 3 1200",
+    "RAM": 8,
+    "FreeMemory": 105
+  }
+}
+{
+  "FullName": "Tekken 7",
+  "SmallName": "T7",
+  "Developer": "Bandai Namco Studios Inc.",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\TEKKEN.jpg",
+  "Genre": 6,
+  "Rating": 64,
+  "Price": 100,
+  "Description": "The gameplay will delight at least two novelties: 1) characters will be able to strike at the moment when they are attacked; 2) at a critical level of health, it will be possible to apply special blows, which take away 40-80% of the opponent's health. The game is being developed on the Unreal Engine 4, which allows you to get the most out of the latest generation consoles. The developers promise exciting special effects and generally an incredibly realistic fighting game, and this means only one thing that you need to wait for the release and download Tekken 7 (Tekken 7) via torrent to your pc.",
+  "SystemRequirements": {
+    "OS": "Windows 7 /8.1/10",
+    "Processor": "Intel Core i3-4160 @ 3.60GHz",
+    "RAM": 6,
+    "FreeMemory": 65
+  }
+}
+{
+  "FullName": "War Thunder",
+  "SmallName": "WT",
+  "Developer": "Gaijin",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\WarThunder.jpg",
+  "Genre": 7,
+  "Rating": 1318,
+  "Price": 23,
+  "Description": "The online project War Thunder includes both single and multiplayer games, and gamers are offered different modes, the number of which will increase over time. You can take control of a tank, plane or ship, that is, the opportunity to look at historical events from the point of view of different types of troops is realized. The best part is that you can download the War Thunder torrent for free.",
+  "SystemRequirements": {
+    "OS": "Vista, 7, 8, 10",
+    "Processor": " 2,2GHz",
+    "RAM": 4,
+    "FreeMemory": 28
+  }
+}
+

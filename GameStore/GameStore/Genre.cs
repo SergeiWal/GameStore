@@ -8,13 +8,13 @@ namespace GameStore
 {
     enum Genre
     {
-        ACTION,
-        SHOOTER,
-        RACE,
-        HORROR,
-        ARCADE,
-        RPG,
-        FIGHTING,
-        SIMULATOR
+        ACTION,     //0
+        SHOOTER,    //1
+        RACE,       //2
+        HORROR,     //3
+        ARCADE,     //4
+        RPG,        //5
+        FIGHTING,   //6
+        SIMULATOR   //7
     }
 }

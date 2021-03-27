@@ -11,6 +11,8 @@ namespace GameStore
     {
         public string FullName { get; set; }
         public string SmallName { get; set; }
+        public string Developer { get; set; }
+        public string Image { get; set; }
         public Genre Genre { get; set; }
         public double Rating { get; set; }
         public decimal Price { get; set; }
@@ -18,10 +20,12 @@ namespace GameStore
         public SystemRequirements SystemRequirements { get; set; }
 
         public Game() { }
-        public Game(string fullName, string smallName, Genre genre, double rating, decimal price, string description, SystemRequirements systemRequirements)
+        public Game(string fullName, string smallName, string developer, string image, Genre genre, double rating, decimal price, string description, SystemRequirements systemRequirements)
         {
             FullName = fullName;
             SmallName = smallName;
+            Developer = developer;
+            Image = image;
             Genre = genre;
             Rating = rating;
             Price = price;
