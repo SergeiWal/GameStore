@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GameStore.DataWork;
 
 
 namespace GameStore
@@ -25,17 +26,23 @@ namespace GameStore
         public MainWindow()
         {
             InitializeComponent();
-            Game game = new Game();
-            game.FullName = "Assassin Creed 3";
-            game.Image = "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\AS3.jpg";
-            Grid gameCell = GameCell.BuildCell(game);
-            DataSectionStack.Children.Add(gameCell);
+            //Game game = new Game();
+            //game.FullName = "Assassin Creed 3";
+            //game.Image = "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\AS3.jpg";
+            //Grid gameCell = GameCell.BuildCell(game);
+            //DataSectionStack.Children.Add(gameCell);
+            DisplayAllGames();
         }
 
-       // public void DisplayAllGames()
-       // {
-       //     
-       // }
+       public void DisplayAllGames()
+       {
+            List<Game> games = GameDataService.FindAll();
+            foreach (var game in games)
+            {
+                Grid gameCell = GameCell.BuildCell(game);
+                DataSectionStack.Children.Add(gameCell);
+            }
+       }
 
        
     }
