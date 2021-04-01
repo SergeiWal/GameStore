@@ -83,21 +83,25 @@ namespace GameStore.DataWork
             }
             return games;
         }
-        public static Game FindByName(string findName)
+        public static List<Game> FindByName(string findName)
         {
             try
             {
+                List<Game> resultGames = new List<Game>();
                 List<Game> games = FindAll();
+
                 if (games.Count > 0)
                 {
                     foreach (var c in games)
                     {
                         if (c.FullName.Contains(findName))
                         {
-                            return c;
+                            resultGames.Add(c);
                         }
                     }
                 }
+
+                return resultGames;
             }
             catch (IOException e)
             {
