@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using GameStore.DataWork;
+using GameStore.Commands;
 
 
 namespace GameStore
@@ -26,24 +27,77 @@ namespace GameStore
         public MainWindow()
         {
             InitializeComponent();
-            //Game game = new Game();
-            //game.FullName = "Assassin Creed 3";
-            //game.Image = "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\AS3.jpg";
-            //Grid gameCell = GameCell.BuildCell(game);
-            //DataSectionStack.Children.Add(gameCell);
-            DisplayAllGames();
+            DisplayGames();
         }
 
-       public void DisplayAllGames()
-       {
-            List<Game> games = GameDataService.FindAll();
-            foreach (var game in games)
-            {
-                Grid gameCell = GameCell.BuildCell(game);
-                DataSectionStack.Children.Add(gameCell);
-            }
-       }
+        private void GenreSort_All_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            DataSectionStack.Children.Clear();
+            DisplayGames();
+        }
+        private void GenreSort_Action_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            DataSectionStack.Children.Clear();
+            DisplayGames(Genre.ACTION);
+        }
+        private void GenreSort_Shooter_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            DataSectionStack.Children.Clear();
+            DisplayGames(Genre.SHOOTER);
+        }
+        private void GenreSort_Arcade_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            DataSectionStack.Children.Clear();
+            DisplayGames(Genre.ARCADE);
+        }
+        private void GenreSort_RPG_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            DataSectionStack.Children.Clear();
+            DisplayGames(Genre.RPG);
+        }
+        private void GenreSort_Horror_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            DataSectionStack.Children.Clear();
+            DisplayGames(Genre.HORROR);
+        }
+        private void GenreSort_Fighting_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            DataSectionStack.Children.Clear();
+            DisplayGames(Genre.FIGHTING);
+        }
+        private void GenreSort_Simulator_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            DataSectionStack.Children.Clear();
+            DisplayGames(Genre.SIMULATOR);
+        }
+        private void GenreSort_Race_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            DataSectionStack.Children.Clear();
+            DisplayGames(Genre.RACE);
+        }
 
-       
+        public void DisplayGames(Genre genre = Genre.ALL)
+        {
+            List<Game> games = GameDataService.FindAll();
+            if (genre != Genre.ALL)
+            {
+                foreach (var game in games)
+                {
+                    if (game.Genre == genre)
+                    {
+                        Grid gameCell = GameCell.BuildCell(game);
+                        DataSectionStack.Children.Add(gameCell);
+                    }
+                }
+            }
+            else
+            {
+                foreach (var game in games)
+                {
+                    Grid gameCell = GameCell.BuildCell(game);
+                    DataSectionStack.Children.Add(gameCell);
+                }
+            }
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameStore
 {
-    enum Genre
+    public enum Genre
     {
         ACTION,     //0
         SHOOTER,    //1
@@ -15,6 +15,7 @@ namespace GameStore
         ARCADE,     //4
         RPG,        //5
         FIGHTING,   //6
-        SIMULATOR   //7
+        SIMULATOR,  //7
+        ALL
     }
 }

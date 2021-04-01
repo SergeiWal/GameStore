@@ -20,19 +20,29 @@ namespace GameStore
         public SystemRequirements SystemRequirements { get; set; }
 
         public Game() { }
-        public Game(string fullName, string smallName, string developer, string image, Genre genre, double rating, decimal price, string description, SystemRequirements systemRequirements)
-        {
-            FullName = fullName;
-            SmallName = smallName;
-            Developer = developer;
-            Image = image;
-            Genre = genre;
-            Rating = rating;
-            Price = price;
-            Description = description;
-            SystemRequirements = systemRequirements;
-        }
 
-        
+        public override bool Equals(object obj)
+        {
+            if (obj is Game)
+            {
+                Game game = (Game)obj;
+                if (game.FullName == this.FullName)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            return false;
+        }
+        public override int GetHashCode()
+        {
+            int hashCode = 1565895131;
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(FullName);
+            hashCode = hashCode * -1521134295 + EqualityComparer<SystemRequirements>.Default.GetHashCode(SystemRequirements);
+            return hashCode;
+        }
     }
 }

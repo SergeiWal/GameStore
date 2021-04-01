@@ -94,6 +94,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commands\HomeCommands.cs" />
     <Compile Include="DataWork\GameDataService.cs" />
     <Compile Include="GameCell.cs" />
     <Compile Include="Genre.cs" />

@@ -16,12 +16,5 @@ namespace GameStore
         public int FreeMemory { get; set; }
 
         public SystemRequirements() { }
-        public SystemRequirements(string os, string processor, int ram, int memory)
-        {
-            OS = os;
-            Processor = processor;
-            RAM = ram;
-            FreeMemory = memory;
-        }
     }
 }
