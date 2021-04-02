@@ -9,7 +9,8 @@
         mc:Ignorable="d"
         Title="Home" Height="450" Width="800" MinHeight="500" MinWidth="820">
     <Window.CommandBindings>
-        <CommandBinding Command="localcommand:HomeCommands.Filter" Executed="Filters_Executed"></CommandBinding>
+        <CommandBinding Command="localcommand:HomeCommands.Filter" Executed="Filters_Executed"/>
+        <CommandBinding Command="localcommand:HomeCommands.Find" Executed="Find_Executed"/>
     </Window.CommandBindings>
     <Grid x:Name="BaseFrame" ShowGridLines="False" MinHeight="450" MinWidth="800" Background="#212F39">
         <Grid.ColumnDefinitions>
@@ -53,6 +54,7 @@
                      Width="32"
                      VerticalAlignment="Center"
                      HorizontalAlignment="Center"
+                     Command="localcommand:HomeCommands.Find"
                    >
                 <Image Source="D:\GIT\GameStore\GameStore\GameStore\images\findIcon.png"></Image>
             </Button>
