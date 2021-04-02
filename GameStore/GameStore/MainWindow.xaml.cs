@@ -15,7 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using GameStore.DataWork;
 using GameStore.Commands;
-
+using System.Windows.Resources;
 
 namespace GameStore
 {
@@ -182,5 +182,6 @@ namespace GameStore
                 PrintCurrentGames();
             }
         }
+
     }
 }

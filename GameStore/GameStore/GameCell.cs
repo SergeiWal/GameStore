@@ -18,7 +18,7 @@ namespace GameStore
             Grid grid = CreateGrid();
             grid.Children.Add(CreateImage(game));
             grid.Children.Add(CreateTextBlock(game));
-            grid.Children.Add(CreateButtom(game));
+            grid.Children.Add(CreateButtomPanel(game));
             return grid;
         }
 
@@ -33,7 +33,7 @@ namespace GameStore
             ColumnDefinition column3 = new ColumnDefinition();
             column1.Width = new GridLength(1, GridUnitType.Star);
             column2.Width = new GridLength(4, GridUnitType.Star);
-            column3.Width = new GridLength(1, GridUnitType.Star);
+            column3.Width = new GridLength(3, GridUnitType.Star);
             RowDefinition row = new RowDefinition();
             row.Height = new GridLength(45, GridUnitType.Pixel);
 
@@ -42,6 +42,18 @@ namespace GameStore
             grid.ColumnDefinitions.Add(column3);
             grid.RowDefinitions.Add(row);
             return grid;
+        }
+
+        private static WrapPanel CreateButtomPanel(Game game)
+        {
+            WrapPanel wrapPanel = new WrapPanel();
+            wrapPanel.Name = "ButtonPanel";
+            wrapPanel.HorizontalAlignment = HorizontalAlignment.Right;
+            Grid.SetColumn(wrapPanel, 2);
+            wrapPanel.Children.Add(CreateViewButtom(game));
+            wrapPanel.Children.Add(CreateUpdateButtom(game));
+            wrapPanel.Children.Add(CreateDeleteButtom(game));
+            return wrapPanel;
         }
 
         private static Image CreateImage(Game game)
@@ -69,7 +81,7 @@ namespace GameStore
             return textBlock;
         }
 
-        private static Button CreateButtom(Game game)
+        private static Button CreateViewButtom(Game game)
         {
             Button button = new Button();
             button.Template = CreateStyleForButton();
@@ -77,8 +89,8 @@ namespace GameStore
             button.Height = 35;
             button.VerticalAlignment = VerticalAlignment.Center;
             button.HorizontalAlignment = HorizontalAlignment.Right;
-            button.Margin = new Thickness(10, 5, 10, 5);
-            Grid.SetColumn(button, 2);
+            button.Margin = new Thickness(3);
+            //Grid.SetColumn(button, 2);
 
             Image image = new Image();
             BitmapImage bi3 = new BitmapImage();
@@ -91,6 +103,54 @@ namespace GameStore
 
             return button;
         }
+
+        private static Button CreateDeleteButtom(Game game)
+        {
+            Button button = new Button();
+            button.Template = CreateStyleForButton();
+            button.Width = 35;
+            button.Height = 35;
+            button.VerticalAlignment = VerticalAlignment.Center;
+            button.HorizontalAlignment = HorizontalAlignment.Right;
+            button.Margin = new Thickness(3);
+            //Grid.SetColumn(button, 4);
+
+            Image image = new Image();
+            BitmapImage bi3 = new BitmapImage();
+            bi3.BeginInit();
+            bi3.UriSource = new Uri(@"/GameStore;component/images/delete.png", UriKind.Relative);
+            bi3.EndInit();
+            image.Source = bi3;
+
+            button.Content = image;
+
+            return button;
+        }
+
+        private static Button CreateUpdateButtom(Game game)
+        {
+            Button button = new Button();
+            button.Template = CreateStyleForButton();
+            button.Width = 35;
+            button.Height = 35;
+            button.VerticalAlignment = VerticalAlignment.Center;
+            button.HorizontalAlignment = HorizontalAlignment.Right;
+            button.Margin = new Thickness(3);
+            //Grid.SetColumn(button, 3);
+
+            Image image = new Image();
+            BitmapImage bi3 = new BitmapImage();
+            bi3.BeginInit();
+            bi3.UriSource = new Uri(@"/GameStore;component/images/update.png", UriKind.Relative);
+            bi3.EndInit();
+            image.Source = bi3;
+
+            button.Content = image;
+
+            return button;
+        }
+
+
 
         private static ControlTemplate CreateStyleForButton()
         {

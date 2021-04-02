@@ -136,6 +136,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Data\data.json" />
+    <None Include="images\AppStarting.ani" />
+    <None Include="images\Arrow.ani" />
+    <None Include="images\Handwriting.ani" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -172,6 +175,8 @@
     <Resource Include="images\Wildfire.png" />
     <Resource Include="images\witherjpg.jpg" />
     <Resource Include="images\eye.png" />
+    <Resource Include="images\delete.png" />
+    <Resource Include="images\update.png" />
     <Content Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
