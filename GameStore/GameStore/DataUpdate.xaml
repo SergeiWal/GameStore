@@ -1,0 +1,213 @@
+﻿<Window x:Class="GameStore.DataUpdate"
+        Icon="D:\GIT\GameStore\GameStore\GameStore\images\logo.jpg"
+        Cursor="D:\GIT\GameStore\GameStore\GameStore\images\Arrow.ani"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameStore"
+        mc:Ignorable="d"
+        Title="DataUpdate" Height="552" Width="285"
+        MinHeight="551" MinWidth="284">
+    <Grid  ShowGridLines="False" Background="#212F39">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="10 0"
+                   Foreground="White"
+                   FontSize="16"
+                   Text="Name: "></TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="10 0"
+                   Foreground="White"
+                   FontSize="16"
+                   Text="Small name:"></TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="10 0"
+                   Foreground="White"
+                   FontSize="16"
+                   Text="Developer: "></TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="10 0"
+                   Foreground="White"
+                   FontSize="16"
+                   Text="Genre: "></TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="10 0"
+                   Foreground="White"
+                   FontSize="16"
+                   Text="Image: "></TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="10 0"
+                   Foreground="White"
+                   FontSize="16"
+                   Text="Rating: "></TextBlock>
+        <TextBlock Grid.Row="6" Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="10 0"
+                   Foreground="White"
+                   FontSize="16"
+                   Text="Price: "></TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="10 0"
+                   Foreground="White"
+                   FontSize="16"
+                   Text="Description: "></TextBlock>
+        <TextBlock Grid.Row="8" Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="10 0"
+                   Foreground="White"
+                   FontSize="16"
+                   Text="OS: "></TextBlock>
+        <TextBlock Grid.Row="9" Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="10 0"
+                   Foreground="White"
+                   FontSize="16"
+                   Text="Processor: "></TextBlock>
+        <TextBlock Grid.Row="10" Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="10 0"
+                   Foreground="White"
+                   FontSize="16"
+                   Text="RAM: "></TextBlock>
+        <TextBlock Grid.Row="11" Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="10 0"
+                   Foreground="White"
+                   FontSize="16"
+                   Text="Free memory: "></TextBlock>
+
+        <TextBox x:Name="Name"
+                 Grid.Row="0" Grid.Column="1"
+                 FontSize="14"
+                 Height="20"
+                 Margin="10 5"></TextBox>
+        
+        <TextBox x:Name="SmallName"
+                 Grid.Row="1" Grid.Column="1"
+                 FontSize="14"
+                 Height="20"
+                 Margin="10 5"></TextBox>
+
+        <TextBox x:Name="Developer"
+                 Grid.Row="2" Grid.Column="1"
+                 FontSize="14"
+                 Height="20"
+                 Margin="10 5"></TextBox>
+
+        <ComboBox  x:Name="Genre"
+                   Grid.Row="3" Grid.Column="1"
+                   FontSize="14"
+                   Height="20"
+                   Margin="10 5">
+            <TextBlock>action</TextBlock>
+            <TextBlock>arcade</TextBlock>
+            <TextBlock>rpg</TextBlock>
+            <TextBlock>race</TextBlock>
+            <TextBlock>shooter</TextBlock>
+            <TextBlock>fighting</TextBlock>
+            <TextBlock>horror</TextBlock>
+            <TextBlock>simulator</TextBlock>
+        </ComboBox>
+        <Button 
+            Grid.Column="1" Grid.Row="4"
+            FontSize="12"
+            Height="22"
+            Margin="10 5"
+            Click="Image_Click"
+            >Image</Button>
+        <TextBox x:Name="Rating"
+                 Grid.Row="5" Grid.Column="1"
+                 FontSize="14"
+                 Height="20"
+                 Margin="10 5"
+                 PreviewTextInput="Number_PreviewTextInput"></TextBox>
+        <TextBox x:Name="Price"
+                 Grid.Row="6" Grid.Column="1"
+                 FontSize="14"
+                 Height="20"
+                 Margin="10 5"
+                 PreviewTextInput="Number_PreviewTextInput"
+                 ></TextBox>
+        <TextBox x:Name="Description"
+                 Grid.Row="7" Grid.Column="1"
+                 FontSize="14"
+                 Height="20"
+                 Margin="10 5"></TextBox>
+        <TextBox x:Name="OS"
+                 Grid.Row="8" Grid.Column="1"
+                 FontSize="14"
+                 Height="20"
+                 Margin="10 5"></TextBox>
+        <TextBox x:Name="Processor"
+                 Grid.Row="9" Grid.Column="1"
+                 FontSize="14"
+                 Height="20"
+                 Margin="10 5"></TextBox>
+        <TextBox x:Name="RAM"
+                 Grid.Row="10" Grid.Column="1"
+                 FontSize="14"
+                 Height="20"
+                 Margin="10 5"
+                 PreviewTextInput="Number_PreviewTextInput"
+                 ></TextBox>
+        <TextBox x:Name="FreeMemory"
+                 Grid.Row="11" Grid.Column="1"
+                 FontSize="14"
+                 Height="20"
+                 Margin="10 5"
+                 PreviewTextInput="Number_PreviewTextInput"
+                 ></TextBox>
+        <Button
+            Grid.Column="0" Grid.Row="12"
+             FontSize="14"
+             Height="20"
+             Margin="10 5"
+             Click="Enter_Click"
+            >Enter</Button>
+        <Button
+            Grid.Column="1" Grid.Row="12"
+             FontSize="14"
+             Height="20"
+             Margin="10 5"
+             Click="Exit_Click"
+            >Exit</Button>
+    </Grid>
+</Window>

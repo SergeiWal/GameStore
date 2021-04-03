@@ -42,3 +42,5 @@ D:\GIT\GameStore\GameStore\GameStore\bin\Debug\System.Threading.Tasks.Extensions
 D:\GIT\GameStore\GameStore\GameStore\bin\Debug\System.ValueTuple.xml
 D:\GIT\GameStore\GameStore\GameStore\obj\Debug\GameView.g.cs
 D:\GIT\GameStore\GameStore\GameStore\obj\Debug\GameView.baml
+D:\GIT\GameStore\GameStore\GameStore\obj\Debug\DataUpdate.g.cs
+D:\GIT\GameStore\GameStore\GameStore\obj\Debug\DataUpdate.baml

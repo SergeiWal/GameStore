@@ -96,6 +96,9 @@
     </ApplicationDefinition>
     <Compile Include="Commands\GameCommand.cs" />
     <Compile Include="Commands\HomeCommands.cs" />
+    <Compile Include="DataUpdate.xaml.cs">
+      <DependentUpon>DataUpdate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DataWork\GameDataService.cs" />
     <Compile Include="GameCell.cs" />
     <Compile Include="GameView.xaml.cs">
@@ -103,6 +106,10 @@
     </Compile>
     <Compile Include="Genre.cs" />
     <Compile Include="SystemRequirements.cs" />
+    <Page Include="DataUpdate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DictionaryMaterialDesign.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

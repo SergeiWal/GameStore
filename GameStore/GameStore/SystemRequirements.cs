@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace GameStore
 {
     [Serializable]
-    class SystemRequirements
+    public class SystemRequirements
     {
         public string OS { get; set; }
         public string Processor { get; set; }

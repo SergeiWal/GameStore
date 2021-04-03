@@ -26,6 +26,7 @@ namespace GameStore
     {
         private List<Game> currentGames;
 
+
         public MainWindow()
         {
             InitializeComponent();
@@ -185,6 +186,11 @@ namespace GameStore
                 PrintCurrentGames();
             }
         }
-
+        private void AddGame_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            DataUpdate dataUpdate = new DataUpdate();
+            dataUpdate.Owner = this;
+            dataUpdate.Show();
+        }
     }
 }

@@ -351,7 +351,13 @@
             <Button Width="50" Height="50" 
                     VerticalAlignment="Bottom"
                     HorizontalAlignment="Left"
-                    Margin="10 5">
+                    Margin="10 5"
+                    Command="localcommand:GameCommand.Add">
+                <Button.CommandBindings>
+                    <CommandBinding Command="localcommand:GameCommand.Add"
+                                        Executed="AddGame_Executed">
+                    </CommandBinding>
+                </Button.CommandBindings>
                 <Button.Template>
                     <ControlTemplate  TargetType="Button">
                         <Grid>

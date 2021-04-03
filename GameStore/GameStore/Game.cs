@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace GameStore
 {
     [Serializable]
-    class Game
+    public class Game
     {
         public string FullName { get; set; }
         public string SmallName { get; set; }
