@@ -5,24 +5,39 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace GameStore
 {
-    static class GameCell
+    class GameCell
     {
-        public static Grid BuildCell(Game game)
+        private Game game;
+        private readonly MainWindow mainWindow;
+
+        public Game getGame()
+        {
+            return game;
+        }
+
+        public GameCell(Game game, MainWindow mainWindow)
+        {
+            this.game = game;
+            this.mainWindow = mainWindow;
+        }
+
+        public Grid BuildCell()
         {
             Grid grid = CreateGrid();
-            grid.Children.Add(CreateImage(game));
-            grid.Children.Add(CreateTextBlock(game));
-            grid.Children.Add(CreateButtomPanel(game));
+            grid.Children.Add(CreateImage());
+            grid.Children.Add(CreateTextBlock());
+            grid.Children.Add(CreateButtomPanel());
             return grid;
         }
 
-        private static Grid CreateGrid()
+        private Grid CreateGrid()
         {
             Grid grid = new Grid();
             grid.Background = new SolidColorBrush(Color.FromRgb(120, 151, 228));//#7897E4
@@ -44,19 +59,19 @@ namespace GameStore
             return grid;
         }
 
-        private static WrapPanel CreateButtomPanel(Game game)
+        private WrapPanel CreateButtomPanel()
         {
             WrapPanel wrapPanel = new WrapPanel();
             wrapPanel.Name = "ButtonPanel";
             wrapPanel.HorizontalAlignment = HorizontalAlignment.Right;
             Grid.SetColumn(wrapPanel, 2);
-            wrapPanel.Children.Add(CreateViewButtom(game));
-            wrapPanel.Children.Add(CreateUpdateButtom(game));
-            wrapPanel.Children.Add(CreateDeleteButtom(game));
+            wrapPanel.Children.Add(CreateViewButtom());
+            wrapPanel.Children.Add(CreateUpdateButtom());
+            wrapPanel.Children.Add(CreateDeleteButtom());
             return wrapPanel;
         }
 
-        private static Image CreateImage(Game game)
+        private Image CreateImage()
         {
             Image image = new Image();
             image.Margin = new Thickness(5);
@@ -70,7 +85,7 @@ namespace GameStore
             return image;
         }
 
-        private static TextBlock CreateTextBlock(Game game)
+        private TextBlock CreateTextBlock()
         {
             TextBlock textBlock = new TextBlock();
             textBlock.Text = game.FullName;
@@ -81,7 +96,7 @@ namespace GameStore
             return textBlock;
         }
 
-        private static Button CreateViewButtom(Game game)
+        private Button CreateViewButtom()
         {
             Button button = new Button();
             button.Template = CreateStyleForButton();
@@ -90,6 +105,11 @@ namespace GameStore
             button.VerticalAlignment = VerticalAlignment.Center;
             button.HorizontalAlignment = HorizontalAlignment.Right;
             button.Margin = new Thickness(3);
+            button.Command = Commands.GameCommand.View;
+            CommandBinding commandBinding = new CommandBinding();
+            commandBinding.Command = Commands.GameCommand.View;
+            commandBinding.Executed += ViewGame_Executed;
+            button.CommandBindings.Add(commandBinding);
             //Grid.SetColumn(button, 2);
 
             Image image = new Image();
@@ -104,7 +124,7 @@ namespace GameStore
             return button;
         }
 
-        private static Button CreateDeleteButtom(Game game)
+        private  Button CreateDeleteButtom()
         {
             Button button = new Button();
             button.Template = CreateStyleForButton();
@@ -127,7 +147,7 @@ namespace GameStore
             return button;
         }
 
-        private static Button CreateUpdateButtom(Game game)
+        private  Button CreateUpdateButtom()
         {
             Button button = new Button();
             button.Template = CreateStyleForButton();
@@ -150,14 +170,51 @@ namespace GameStore
             return button;
         }
 
-
-
-        private static ControlTemplate CreateStyleForButton()
+        private ControlTemplate CreateStyleForButton()
         {
             string controlTemplateBuf = "<ControlTemplate xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'" + " TargetType=\"Button\">\n<Grid>\n<Ellipse Fill = \"#427E8E\" ></Ellipse >\n" +
                              "<Label Content = \"{TemplateBinding Content}\" HorizontalAlignment = \"Center\" VerticalAlignment = \"Center\"></Label>\n" +
                         "</Grid ></ControlTemplate >";
             return (ControlTemplate)XamlReader.Parse(controlTemplateBuf);
+        }
+
+        public void ViewGame_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            GameView gameView = new GameView();
+            gameView.Owner = mainWindow;
+            gameView.DescriptionText.Text = "Description:\n" + game.Description;
+            gameView.GameName.Text = game.FullName;
+            gameView.Price.Text = game.Price.ToString();
+            gameView.Name.Text += game.SmallName;
+            gameView.Developer.Text += game.Developer;
+            gameView.Genre.Text += GenreToString(game.Genre);
+            gameView.OS.Text += game.SystemRequirements.OS;
+            gameView.Processor.Text += game.SystemRequirements.Processor;
+            gameView.RAM.Text += game.SystemRequirements.RAM + "GB";
+            gameView.FreeMemory.Text += game.SystemRequirements.FreeMemory + "GB";
+            gameView.Rating.Text += game.Rating;
+            BitmapImage bi3 = new BitmapImage();
+            bi3.BeginInit();
+            bi3.UriSource = new Uri(game.Image, UriKind.Absolute);
+            bi3.EndInit();
+            gameView.GameImage.Source = bi3;
+            gameView.Show();
+        }
+
+        private string GenreToString(Genre genre)
+        {
+            switch (genre)
+            {
+                case Genre.ACTION: return "action";
+                case Genre.ARCADE: return "arcade";
+                case Genre.FIGHTING: return "fighting";
+                case Genre.HORROR: return "horror";
+                case Genre.RPG: return "rpg";
+                case Genre.RACE: return "race";
+                case Genre.SIMULATOR: return "simulator";
+                default:
+                    return "";
+            }
         }
     }
 }

@@ -14,11 +14,10 @@ namespace GameStore.Commands
             GenreSort = new RoutedCommand("GenreSort", typeof(MainWindow));
             Filter = new RoutedCommand("Filter", typeof(MainWindow));
             Find = new RoutedCommand("Find", typeof(MainWindow));
-            ViewGame = new RoutedCommand("ViewGame", typeof(MainWindow));
         }
         public static RoutedCommand GenreSort { get; set; }
         public static RoutedCommand Filter { get; set; }
         public static RoutedCommand Find { get; set; }
-        public static RoutedCommand ViewGame { get; set; }
+        
     }
 }

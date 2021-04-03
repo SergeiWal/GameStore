@@ -40,3 +40,5 @@ D:\GIT\GameStore\GameStore\GameStore\bin\Debug\System.Text.Encodings.Web.xml
 D:\GIT\GameStore\GameStore\GameStore\bin\Debug\System.Text.Json.xml
 D:\GIT\GameStore\GameStore\GameStore\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\GIT\GameStore\GameStore\GameStore\bin\Debug\System.ValueTuple.xml
+D:\GIT\GameStore\GameStore\GameStore\obj\Debug\GameView.g.cs
+D:\GIT\GameStore\GameStore\GameStore\obj\Debug\GameView.baml

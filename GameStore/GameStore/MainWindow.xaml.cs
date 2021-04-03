@@ -83,8 +83,9 @@ namespace GameStore
                 {
                     if (game.Genre == genre)
                     {
-                        Grid gameCell = GameCell.BuildCell(game);
-                        DataSectionStack.Children.Add(gameCell);
+                        GameCell gameCell = new GameCell(game, this);
+                        Grid viewGameCell = gameCell.BuildCell();
+                        DataSectionStack.Children.Add(viewGameCell);
                         currentGames.Add(game);
                     }
                 }
@@ -93,8 +94,9 @@ namespace GameStore
             {
                 foreach (var game in games)
                 {
-                    Grid gameCell = GameCell.BuildCell(game);
-                    DataSectionStack.Children.Add(gameCell);
+                    GameCell gameCell = new GameCell(game, this);
+                    Grid viewGameCell = gameCell.BuildCell();
+                    DataSectionStack.Children.Add(viewGameCell);
                 }
                 currentGames = games;
             }
@@ -164,8 +166,9 @@ namespace GameStore
             DataSectionStack.Children.Clear();
             foreach (var game in currentGames)
             {
-                Grid gameCell = GameCell.BuildCell(game);
-                DataSectionStack.Children.Add(gameCell);
+                GameCell gameCell = new GameCell(game, this);
+                Grid viewGameCell = gameCell.BuildCell();
+                DataSectionStack.Children.Add(viewGameCell);
             }
         }
 

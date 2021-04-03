@@ -94,12 +94,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commands\GameCommand.cs" />
     <Compile Include="Commands\HomeCommands.cs" />
     <Compile Include="DataWork\GameDataService.cs" />
     <Compile Include="GameCell.cs" />
+    <Compile Include="GameView.xaml.cs">
+      <DependentUpon>GameView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Genre.cs" />
     <Compile Include="SystemRequirements.cs" />
     <Page Include="DictionaryMaterialDesign.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
