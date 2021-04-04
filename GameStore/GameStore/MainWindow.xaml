@@ -9,6 +9,15 @@
         xmlns:localcommand ="clr-namespace:GameStore.Commands"
         mc:Ignorable="d"
         Title="Home" Height="450" Width="800" MinHeight="500" MinWidth="820">
+    <Window.Resources>
+        <Style x:Key="ButtonStyle">
+            <Setter Property="Control.Background" Value="#427E8E"></Setter>
+            <Setter Property="Control.HorizontalAlignment" Value="Left"></Setter>
+            <Setter Property="Control.BorderThickness" Value="0"></Setter>
+            <Setter Property="Control.Margin" Value="10 3"></Setter>
+            <Setter Property="Control.Height" Value="24"></Setter>
+        </Style>
+    </Window.Resources>
     <Window.CommandBindings>
         <CommandBinding Command="localcommand:HomeCommands.Filter" Executed="Filters_Executed"/>
         <CommandBinding Command="localcommand:HomeCommands.Find" Executed="Find_Executed"/>
@@ -80,9 +89,7 @@
         <Grid x:Name="MenuPlace" Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" >
             <StackPanel Background="#427E8E" Margin="4 5 5 4"
                          Height="350" MaxHeight="350" VerticalAlignment="Center">
-                <Button Margin="10 3" Height="24" Background="#427E8E"
-                         BorderThickness="0" HorizontalAlignment="Left"
-                        VerticalAlignment="Stretch"
+                <Button Style="{StaticResource ButtonStyle}"
                         Command="localcommand:HomeCommands.GenreSort">
                     <Button.CommandBindings>
                         <CommandBinding Command="localcommand:HomeCommands.GenreSort"
@@ -113,8 +120,7 @@
                             ></Image>
                     </Grid>
                 </Button>
-                <Button Margin="10 3" Height="24" Background="#427E8E"
-                         BorderThickness="0" HorizontalAlignment="Left"
+                <Button Style="{StaticResource ButtonStyle}"
                          Command="localcommand:HomeCommands.GenreSort">
                     <Button.CommandBindings>
                         <CommandBinding Command="localcommand:HomeCommands.GenreSort"
@@ -145,8 +151,7 @@
                             ></Image>
                     </Grid>
                 </Button>
-                <Button Margin="10 3" Height="24" Background="#427E8E"
-                         BorderThickness="0" HorizontalAlignment="Left"
+                <Button Style="{StaticResource ButtonStyle}"
                         Command="localcommand:HomeCommands.GenreSort">
                     <Button.CommandBindings>
                         <CommandBinding Command="localcommand:HomeCommands.GenreSort"
@@ -177,8 +182,7 @@
                             ></Image>
                     </Grid>
                 </Button>
-                <Button Margin="10 3" Height="24" Background="#427E8E"
-                         BorderThickness="0" HorizontalAlignment="Left"
+                <Button Style="{StaticResource ButtonStyle}"
                         Command="localcommand:HomeCommands.GenreSort">
                     <Button.CommandBindings>
                         <CommandBinding Command="localcommand:HomeCommands.GenreSort"
@@ -209,8 +213,7 @@
                             ></Image>
                     </Grid>
                 </Button>
-                <Button Margin="10 3" Height="24" Background="#427E8E"
-                         BorderThickness="0" HorizontalAlignment="Left"
+                <Button Style="{StaticResource ButtonStyle}"
                         Command="localcommand:HomeCommands.GenreSort">
                     <Button.CommandBindings>
                         <CommandBinding Command="localcommand:HomeCommands.GenreSort"
@@ -241,8 +244,7 @@
                             ></Image>
                     </Grid>
                 </Button>
-                <Button Margin="10 3" Height="24" Background="#427E8E"
-                         BorderThickness="0" HorizontalAlignment="Left"
+                <Button Style="{StaticResource ButtonStyle}"
                         Command="localcommand:HomeCommands.GenreSort">
                     <Button.CommandBindings>
                         <CommandBinding Command="localcommand:HomeCommands.GenreSort"
@@ -273,8 +275,7 @@
                             ></Image>
                     </Grid>
                 </Button>
-                <Button Margin="10 3" Height="24" Background="#427E8E"
-                         BorderThickness="0" HorizontalAlignment="Left"
+                <Button Style="{StaticResource ButtonStyle}"
                         Command="localcommand:HomeCommands.GenreSort">
                     <Button.CommandBindings>
                         <CommandBinding Command="localcommand:HomeCommands.GenreSort"
@@ -305,8 +306,7 @@
                             ></Image>
                     </Grid>
                 </Button>
-                <Button Margin="10 3" Height="24" Background="#427E8E"
-                         BorderThickness="0" HorizontalAlignment="Left"
+                <Button Style="{StaticResource ButtonStyle}"
                         Command="localcommand:HomeCommands.GenreSort">
                     <Button.CommandBindings>
                         <CommandBinding Command="localcommand:HomeCommands.GenreSort"
@@ -337,8 +337,7 @@
                             ></Image>
                     </Grid>
                 </Button>
-                <Button Margin="10 3" Height="24" Background="#427E8E"
-                         BorderThickness="0" HorizontalAlignment="Left"
+                <Button Style="{StaticResource ButtonStyle}"
                         Command="localcommand:HomeCommands.GenreSort">
                     <Button.CommandBindings>
                         <CommandBinding Command="localcommand:HomeCommands.GenreSort"
