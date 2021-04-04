@@ -27,11 +27,8 @@ namespace GameStore.DataWork
             {
                 using (StreamWriter jsonFile = new StreamWriter(FILE_PATH, true))
                 {
-                    if (FindByName(newGame.FullName)==null)
-                    {
-                        string jsonDataAboutGame = JsonSerializer.Serialize<Game>(newGame, JSON_OPTIONS);
-                        jsonFile.WriteLine(jsonDataAboutGame);
-                    }
+                    string jsonDataAboutGame = JsonSerializer.Serialize<Game>(newGame, JSON_OPTIONS);
+                    jsonFile.WriteLine(jsonDataAboutGame);
                 }
             }
             catch (IOException e)

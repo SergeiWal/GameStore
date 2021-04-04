@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameStore.DataWork;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -110,7 +111,6 @@ namespace GameStore
             commandBinding.Command = Commands.GameCommand.View;
             commandBinding.Executed += ViewGame_Executed;
             button.CommandBindings.Add(commandBinding);
-            //Grid.SetColumn(button, 2);
 
             Image image = new Image();
             BitmapImage bi3 = new BitmapImage();
@@ -133,7 +133,11 @@ namespace GameStore
             button.VerticalAlignment = VerticalAlignment.Center;
             button.HorizontalAlignment = HorizontalAlignment.Right;
             button.Margin = new Thickness(3);
-            //Grid.SetColumn(button, 4);
+            button.Command = Commands.GameCommand.Delete;
+            CommandBinding commandBinding = new CommandBinding();
+            commandBinding.Command = Commands.GameCommand.Delete;
+            commandBinding.Executed += DeleteGame_Executed;
+            button.CommandBindings.Add(commandBinding);
 
             Image image = new Image();
             BitmapImage bi3 = new BitmapImage();
@@ -181,6 +185,12 @@ namespace GameStore
         public void ViewGame_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             GameView gameView = new GameView();
+            GameViewFieldInicalization(gameView);
+            gameView.Show();
+        }
+
+        private void GameViewFieldInicalization(GameView gameView)
+        {
             gameView.Owner = mainWindow;
             gameView.DescriptionText.Text = "Description:\n" + game.Description;
             gameView.GameName.Text = game.FullName;
@@ -198,7 +208,6 @@ namespace GameStore
             bi3.UriSource = new Uri(game.Image, UriKind.Absolute);
             bi3.EndInit();
             gameView.GameImage.Source = bi3;
-            gameView.Show();
         }
 
         private string GenreToString(Genre genre)
@@ -215,6 +224,12 @@ namespace GameStore
                 default:
                     return "";
             }
+        }
+
+        public void DeleteGame_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            GameDataService.RemoveGame(game);
+            mainWindow.DisplayGames();
         }
     }
 }

@@ -26,7 +26,6 @@ namespace GameStore
     {
         private List<Game> currentGames;
 
-
         public MainWindow()
         {
             InitializeComponent();

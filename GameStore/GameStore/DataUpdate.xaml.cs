@@ -55,6 +55,7 @@ namespace GameStore
             if (IsValid())
             {
                 GameDataService.AddGame(CreateGame());
+                this.Close();
             }
             else
             {
