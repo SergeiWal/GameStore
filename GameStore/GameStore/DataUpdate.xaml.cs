@@ -22,7 +22,7 @@ namespace GameStore
     public partial class DataUpdate : Window
     {
 
-        private string Path { get; set; } = "";
+        public string Path { get; set; } = "";
 
         public DataUpdate()
         {

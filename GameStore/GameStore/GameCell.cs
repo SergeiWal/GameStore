@@ -160,7 +160,11 @@ namespace GameStore
             button.VerticalAlignment = VerticalAlignment.Center;
             button.HorizontalAlignment = HorizontalAlignment.Right;
             button.Margin = new Thickness(3);
-            //Grid.SetColumn(button, 3);
+            button.Command = Commands.GameCommand.Update;
+            CommandBinding commandBinding = new CommandBinding();
+            commandBinding.Command = Commands.GameCommand.Update;
+            commandBinding.Executed += UpdateGame_Executed;
+            button.CommandBindings.Add(commandBinding);
 
             Image image = new Image();
             BitmapImage bi3 = new BitmapImage();
@@ -230,6 +234,32 @@ namespace GameStore
         {
             GameDataService.RemoveGame(game);
             mainWindow.DisplayGames();
+        }
+        
+        public void UpdateGame_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            DataUpdate dataUpdate = new DataUpdate();
+            DataUpdateFieldInit(dataUpdate);
+            GameDataService.RemoveGame(game);
+            dataUpdate.Show();
+            mainWindow.DisplayGames();
+        }
+
+        private void DataUpdateFieldInit(DataUpdate dataUpdate)
+        {
+            dataUpdate.Owner = mainWindow;
+            dataUpdate.Description.Text = game.Description;
+            dataUpdate.Name.Text = game.FullName;
+            dataUpdate.Price.Text = game.Price.ToString();
+            dataUpdate.SmallName.Text = game.SmallName;
+            dataUpdate.Developer.Text = game.Developer;
+            dataUpdate.Genre.Text = GenreToString(game.Genre);
+            dataUpdate.OS.Text = game.SystemRequirements.OS;
+            dataUpdate.Processor.Text = game.SystemRequirements.Processor;
+            dataUpdate.RAM.Text = game.SystemRequirements.RAM.ToString();
+            dataUpdate.FreeMemory.Text = game.SystemRequirements.FreeMemory.ToString();
+            dataUpdate.Rating.Text = game.Rating.ToString();
+            dataUpdate.Path = game.Image;
         }
     }
 }
