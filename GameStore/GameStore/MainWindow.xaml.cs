@@ -30,6 +30,7 @@ namespace GameStore
         {
             InitializeComponent();
             currentGames = new List<Game>();
+            LangState.GetState().Languege = Languege.EN;
             DisplayGames();
         }
 

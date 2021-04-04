@@ -1,0 +1,53 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:GameStore"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    >
+    
+    <sys:String x:Key="TableTitle">Вас приветствует магазин видеоигр для детей и их родителей</sys:String>
+
+    <sys:String x:Key="AllGameGenre">Все</sys:String>
+    <sys:String x:Key="ActionGameGenre">Экшены</sys:String>
+    <sys:String x:Key="ShooterGameGenre">Шутеры</sys:String>
+    <sys:String x:Key="ArcadeGameGenre">Аркады</sys:String>
+    <sys:String x:Key="RpgGameGenre">РПГ</sys:String>
+    <sys:String x:Key="HorrorGameGenre">Ужасы</sys:String>
+    <sys:String x:Key="FightingGameGenre">Драки</sys:String>
+    <sys:String x:Key="SimulatorGameGenre">Симуляторы</sys:String>
+    <sys:String x:Key="RaceGameGenre">Гонки</sys:String>
+
+    <sys:String x:Key="FilterTitle">Филтры</sys:String>
+    <sys:String x:Key="FilterByName">По имени</sys:String>
+    <sys:String x:Key="FilterByPrice">По цене</sys:String>
+    <sys:String x:Key="FilterByPopularity">По популярности</sys:String>
+    <sys:String x:Key="CommandToFilter">Групировать</sys:String>
+
+    <sys:String x:Key="DataUpdateName">Название:</sys:String>
+    <sys:String x:Key="DataUpdateSmallName">Краткое название:</sys:String>
+    <sys:String x:Key="DataUpdateDeveloper">Разработчик:</sys:String>
+    <sys:String x:Key="DataUpdateImage">Изображение:</sys:String>
+    <sys:String x:Key="DataUpdateGenre">Жанр:</sys:String>
+    <sys:String x:Key="DataUpdateRating">Рейтинг:</sys:String>
+    <sys:String x:Key="DataUpdatePrice">Цена:</sys:String>
+    <sys:String x:Key="DataUpdateDescription">Описание:</sys:String>
+    <sys:String x:Key="DataUpdateOS">ОС:</sys:String>
+    <sys:String x:Key="DataUpdateProcessor">Процессор:</sys:String>
+    <sys:String x:Key="DataUpdateRAM">Оперативная память:</sys:String>
+    <sys:String x:Key="DataUpdateFreeMemory">Свободное место:</sys:String>
+    <sys:String x:Key="DataUpdateExitButton">Закрыть</sys:String>
+    <sys:String x:Key="DataUpdateEnterButton">Готово</sys:String>
+    <sys:String x:Key="DataUpdateImageButton">Изображение</sys:String>
+
+    <sys:String x:Key="GameViewName">Название: </sys:String>
+    <sys:String x:Key="GameViewSmallName">Краткое название: </sys:String>
+    <sys:String x:Key="GameViewDeveloper">Разработчик: </sys:String>
+    <sys:String x:Key="GameViewImage">Изображение: </sys:String>
+    <sys:String x:Key="GameViewGenre">Жанр: </sys:String>
+    <sys:String x:Key="GameViewRating">Рейтинг: </sys:String>
+    <sys:String x:Key="GameViewPrice">Цена: </sys:String>
+    <sys:String x:Key="GameViewDescription">Описание: </sys:String>
+    <sys:String x:Key="GameViewOS">ОС: </sys:String>
+    <sys:String x:Key="GameViewProcessor">Процессор: </sys:String>
+    <sys:String x:Key="GameViewRAM">Оперативная память: </sys:String>
+    <sys:String x:Key="GameViewFreeMemory">Свободное место: </sys:String>
+</ResourceDictionary>

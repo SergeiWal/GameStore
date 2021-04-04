@@ -44,3 +44,4 @@ D:\GIT\GameStore\GameStore\GameStore\obj\Debug\GameView.g.cs
 D:\GIT\GameStore\GameStore\GameStore\obj\Debug\GameView.baml
 D:\GIT\GameStore\GameStore\GameStore\obj\Debug\DataUpdate.g.cs
 D:\GIT\GameStore\GameStore\GameStore\obj\Debug\DataUpdate.baml
+D:\GIT\GameStore\GameStore\GameStore\obj\Debug\ENLocal.baml
