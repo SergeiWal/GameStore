@@ -16,7 +16,7 @@
     <sys:String x:Key="SimulatorGameGenre">Симуляторы</sys:String>
     <sys:String x:Key="RaceGameGenre">Гонки</sys:String>
 
-    <sys:String x:Key="FilterTitle">Филтры</sys:String>
+    <sys:String x:Key="FilterTitle">Фильтры</sys:String>
     <sys:String x:Key="FilterByName">По имени</sys:String>
     <sys:String x:Key="FilterByPrice">По цене</sys:String>
     <sys:String x:Key="FilterByPopularity">По популярности</sys:String>

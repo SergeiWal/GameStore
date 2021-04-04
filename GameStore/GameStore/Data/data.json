@@ -1,21 +1,5 @@
 
 {
-  "FullName": "Assassin\u0027s Creed 3",
-  "SmallName": "ASIII",
-  "Developer": "Ubisoft",
-  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\AS3.jpg",
-  "Genre": 0,
-  "Rating": 236,
-  "Price": 6,
-  "Description": "Our new hero is Connor, who grew up in the Mojave tribe. Having made a promise to protect his people and preserve their freedom and choose the right to a dignified life - he has a lot of work to do.",
-  "SystemRequirements": {
-    "OS": "Windows 7, 8, 10 (64-bit)",
-    "Processor": "Intel Core 2 Duo E8200",
-    "RAM": 2,
-    "FreeMemory": 8
-  }
-}
-{
   "FullName": "Cyberpunk 2077",
   "SmallName": "CP2077",
   "Developer": "CD Projekt RED",
@@ -285,5 +269,21 @@
     "Processor": " 2,2GHz",
     "RAM": 4,
     "FreeMemory": 28
+  }
+}
+{
+  "FullName": "Assassin\u0027s Creed 3",
+  "SmallName": "ASIII",
+  "Developer": "Ubisoft",
+  "Image": "D:\\GIT\\GameStore\\GameStore\\GameStore\\images\\AS3.jpg",
+  "Genre": 0,
+  "Rating": 236,
+  "Price": 6,
+  "Description": "Our new hero is Connor, who grew up in the Mojave tribe. Having made a promise to protect his people and preserve their freedom and choose the right to a dignified life - he has a lot of work to do.",
+  "SystemRequirements": {
+    "OS": "Windows 7, 8, 10 (64-bit)",
+    "Processor": "Intel Core 2 Duo E8200",
+    "RAM": 2,
+    "FreeMemory": 8
   }
 }

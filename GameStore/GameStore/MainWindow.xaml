@@ -25,11 +25,27 @@
         </Grid.RowDefinitions>
 
 
-        <Grid x:Name="LogoPlace" Grid.Row="0" Grid.Column="0"  Background="#203A4F">
-            <Image  
+        <Grid x:Name="LogoPlace" Grid.Row="0" Grid.Column="0"  
+              Background="#203A4F">
+            <Image 
+                HorizontalAlignment="Center"
                 Margin="0 5"
                Source="D:\GIT\GameStore\GameStore\GameStore\images\logo.jpg">
             </Image>
+            <Button
+                HorizontalAlignment="Left"
+                Width="24"
+                Height="24"
+                Background="#203A4F"
+                Margin="5 0"
+                BorderThickness="0"
+                Click="LangButton_Click">
+                <TextBlock x:Name="LangButton" 
+                           FontSize="16"
+                           Foreground="White"
+                           Text="EN">
+                </TextBlock>
+            </Button>
         </Grid>
 
         <Grid x:Name="Title" Grid.Row="0" Grid.Column="1" Background="#203A4F">
@@ -81,7 +97,8 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="32"></RowDefinition>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Grid.Column="1"
+                        <TextBlock x:Name="AllGames"
+                                   Grid.Row="0" Grid.Column="1"
                                    Height="24" FontSize="14"
                                    Text="All"
                                    VerticalAlignment="Top"
@@ -112,7 +129,8 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="32"></RowDefinition>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Grid.Column="1"
+                        <TextBlock x:Name="Action"
+                                   Grid.Row="0" Grid.Column="1"
                                    Height="24" FontSize="14"
                                    Text="Action"
                                    VerticalAlignment="Top"
@@ -143,7 +161,8 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="32"></RowDefinition>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Grid.Column="1"
+                        <TextBlock x:Name="Shooter"
+                                   Grid.Row="0" Grid.Column="1"
                                    Height="24" FontSize="14"
                                    Text="Shooter"
                                    VerticalAlignment="Top"
@@ -174,7 +193,8 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="32"></RowDefinition>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Grid.Column="1"
+                        <TextBlock x:Name="Arcade"
+                                   Grid.Row="0" Grid.Column="1"
                                    Height="24" FontSize="14"
                                    Text="Arcade"
                                    VerticalAlignment="Top"
@@ -205,7 +225,8 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="32"></RowDefinition>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Grid.Column="1"
+                        <TextBlock x:Name="RPG"
+                                   Grid.Row="0" Grid.Column="1"
                                    Height="24" FontSize="14"
                                    Text="RPG"
                                    VerticalAlignment="Top"
@@ -236,7 +257,8 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="32"></RowDefinition>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Grid.Column="1"
+                        <TextBlock x:Name="Horror"
+                                   Grid.Row="0" Grid.Column="1"
                                    Height="24" FontSize="14"
                                    Text="Horror"
                                    VerticalAlignment="Top"
@@ -267,7 +289,8 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="32"></RowDefinition>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Grid.Column="1"
+                        <TextBlock x:Name="Fighting"
+                                   Grid.Row="0" Grid.Column="1"
                                    Height="24" FontSize="14"
                                    Text="Fighting"
                                    VerticalAlignment="Top"
@@ -293,12 +316,13 @@
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="20"></ColumnDefinition>
-                            <ColumnDefinition Width="75"></ColumnDefinition>
+                            <ColumnDefinition Width="95"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="32"></RowDefinition>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Grid.Column="1"
+                        <TextBlock x:Name="Simulator"
+                                   Grid.Row="0" Grid.Column="1"
                                    Height="24" FontSize="14"
                                    Text="Simulator"
                                    VerticalAlignment="Top"
@@ -329,7 +353,8 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="32"></RowDefinition>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Grid.Column="1"
+                        <TextBlock x:Name="Race"
+                                   Grid.Row="0" Grid.Column="1"
                                    Height="24" FontSize="14"
                                    Text="Race"
                                    VerticalAlignment="Top"
@@ -383,7 +408,8 @@
             </Grid.RowDefinitions>
 
             <Grid x:Name="TableTitle" Grid.Row="0" Grid.Column="0" Background="#203A4F">
-                <TextBlock Text="Welcome to game shop for children and their parent"
+                <TextBlock x:Name="TableTitleText"
+                Text="Welcome to game shop for children and their parent"
                 FontSize=" 16"
                 Foreground="White"
                 HorizontalAlignment="Center">
@@ -410,7 +436,8 @@
                     <RowDefinition Height="3*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <TextBlock Grid.Row="0"
+                <TextBlock x:Name="FilterPlaceTitle"
+                    Grid.Row="0"
                     Text="Filters"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center"
@@ -419,15 +446,15 @@
                 <StackPanel Grid.Row="1">
                     <RadioButton x:Name="ByPoplarityButton"
                                  Margin="3 5" GroupName="filters">
-                        <TextBlock Text="By popularity" Foreground="#535050"></TextBlock>
+                        <TextBlock x:Name="ByRating" Text="By popularity" Foreground="#535050"></TextBlock>
                     </RadioButton>
                     <RadioButton x:Name="ByNameButton"
                                  Margin="3 5" GroupName="filters">
-                        <TextBlock Text="By name" Foreground="#535050"></TextBlock>
+                        <TextBlock  x:Name="ByName" Text="By name" Foreground="#535050"></TextBlock>
                     </RadioButton>
                     <RadioButton  x:Name="ByPriceButton"
-                                  Margin="3 5" GroupName="filters"> 
-                        <TextBlock Text="By price" Foreground="#535050"></TextBlock>
+                                  Margin="3 5" GroupName="filters">
+                        <TextBlock  x:Name="ByPrice" Text="By price" Foreground="#535050"></TextBlock>
                     </RadioButton>
                 </StackPanel>
                 <Button Grid.Row="2" 
@@ -437,12 +464,13 @@
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="20"></ColumnDefinition>
-                            <ColumnDefinition Width="70"></ColumnDefinition>
+                            <ColumnDefinition Width="90"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="32"></RowDefinition>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Grid.Column="1"
+                        <TextBlock x:Name="GroupButtonText"
+                                   Grid.Row="0" Grid.Column="1"
                                    Height="24" FontSize="14"
                                    Text="Group"
                                    VerticalAlignment="Top"

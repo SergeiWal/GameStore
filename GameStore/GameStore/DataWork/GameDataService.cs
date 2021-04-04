@@ -15,6 +15,7 @@ namespace GameStore.DataWork
     {
 
         public static string FILE_PATH = "D:\\GIT\\GameStore\\GameStore\\GameStore\\Data\\data.json";
+        public static string RU_FILE_PATH = "D:\\GIT\\GameStore\\GameStore\\GameStore\\Data\\dataRU.json";
         public static JsonSerializerOptions JSON_OPTIONS = new JsonSerializerOptions
         {
             Encoder = JavaScriptEncoder.Create(UnicodeRanges.All),
@@ -25,7 +26,7 @@ namespace GameStore.DataWork
         {
             try
             {
-                using (StreamWriter jsonFile = new StreamWriter(FILE_PATH, true))
+                using (StreamWriter jsonFile = new StreamWriter(GetPath(), true))
                 {
                     string jsonDataAboutGame = JsonSerializer.Serialize<Game>(newGame, JSON_OPTIONS);
                     jsonFile.WriteLine(jsonDataAboutGame);
@@ -40,7 +41,7 @@ namespace GameStore.DataWork
         {
             try
             {
-                using (StreamWriter jsonFile = new StreamWriter(FILE_PATH))
+                using (StreamWriter jsonFile = new StreamWriter(GetPath()))
                 {
                     jsonFile.WriteLine("");
                 }
@@ -55,7 +56,7 @@ namespace GameStore.DataWork
             List<Game> games = new List<Game>();
             try
             {
-                using (StreamReader jsonFile = new StreamReader(FILE_PATH))
+                using (StreamReader jsonFile = new StreamReader(GetPath()))
                 {
                     string bufForJsonString = "";
                     int semicolonCount = 0;
@@ -67,7 +68,7 @@ namespace GameStore.DataWork
                         if (semicolonCount == 2)
                         {
                             semicolonCount = 0;
-                            Game game = JsonSerializer.Deserialize<Game>(bufForJsonString);
+                            Game game = JsonSerializer.Deserialize<Game>(bufForJsonString, JSON_OPTIONS);
                             bufForJsonString = "";
                             games.Add(game);
                         }
@@ -151,5 +152,13 @@ namespace GameStore.DataWork
             }
             return false;
         }
+        private static string GetPath()
+        {
+            LangState langState = LangState.GetState();
+            if (langState.Languege == Languege.EN)
+                return FILE_PATH;
+            else return RU_FILE_PATH;
+        }
+        
     }
 }

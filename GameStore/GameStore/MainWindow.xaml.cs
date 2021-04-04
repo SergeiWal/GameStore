@@ -192,5 +192,70 @@ namespace GameStore
             dataUpdate.Owner = this;
             dataUpdate.Show();
         }
+
+        private void LangButton_Click(object sender, RoutedEventArgs e)
+        {
+            LangState langState = LangState.GetState();
+            switch (langState.Languege)
+            {
+                case Languege.EN:
+                    SetRuLocal(langState);
+                    break;
+                case Languege.RU:
+                    SetEnLocal(langState);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void SetRuLocal(LangState langState)
+        {
+            langState.Languege = Languege.RU;
+            LangButton.Text = "RU";
+            this.Resources = new ResourceDictionary() { Source = new Uri(@"/GameStore;component/RULocal.xaml", UriKind.Relative)};
+
+            TableTitleText.Text = (string)this.TryFindResource("TableTitle");
+
+            AllGames.Text = (string)this.TryFindResource("AllGameGenre");
+            Action.Text = (string)this.TryFindResource("ActionGameGenre");
+            Shooter.Text = (string)this.TryFindResource("ShooterGameGenre");
+            Arcade.Text = (string)this.TryFindResource("ArcadeGameGenre");
+            Fighting.Text = (string)this.TryFindResource("FightingGameGenre");
+            Race.Text = (string)this.TryFindResource("RaceGameGenre");
+            Simulator.Text = (string)this.TryFindResource("SimulatorGameGenre");
+            RPG.Text = (string)this.TryFindResource("RpgGameGenre");
+            Horror.Text = (string)this.TryFindResource("HorrorGameGenre");
+
+            FilterPlaceTitle.Text = (string)this.TryFindResource("FilterTitle");
+            ByName.Text = (string)this.TryFindResource("FilterByName");
+            ByPrice.Text = (string)this.TryFindResource("FilterByPrice");
+            ByRating.Text = (string)this.TryFindResource("FilterByPopularity");
+            GroupButtonText.Text = (string)this.TryFindResource("CommandToFilter");
+        }
+        private void SetEnLocal(LangState langState)
+        {
+            langState.Languege = Languege.EN;
+            LangButton.Text = "EN";
+            this.Resources = new ResourceDictionary() { Source = new Uri(@"/GameStore;component/ENLocal.xaml", UriKind.Relative) };
+
+            TableTitleText.Text = (string)this.TryFindResource("TableTitle");
+
+            AllGames.Text = (string)this.TryFindResource("AllGameGenre");
+            Action.Text = (string)this.TryFindResource("ActionGameGenre");
+            Shooter.Text = (string)this.TryFindResource("ShooterGameGenre");
+            Arcade.Text = (string)this.TryFindResource("ArcadeGameGenre");
+            Fighting.Text = (string)this.TryFindResource("FightingGameGenre");
+            Race.Text = (string)this.TryFindResource("RaceGameGenre");
+            Simulator.Text = (string)this.TryFindResource("SimulatorGameGenre");
+            RPG.Text = (string)this.TryFindResource("RpgGameGenre");
+            Horror.Text = (string)this.TryFindResource("HorrorGameGenre");
+
+            FilterPlaceTitle.Text = (string)this.TryFindResource("FilterTitle");
+            ByName.Text = (string)this.TryFindResource("FilterByName");
+            ByPrice.Text = (string)this.TryFindResource("FilterByPrice");
+            ByRating.Text = (string)this.TryFindResource("FilterByPopularity");
+            GroupButtonText.Text = (string)this.TryFindResource("CommandToFilter");
+        }
     }
 }
